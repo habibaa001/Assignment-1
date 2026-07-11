@@ -1,56 +1,89 @@
 * {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 1500px;
-    margin: auto;
-    padding: 12px 8%;
-    color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  width: 1500px;
+  margin: auto;
+  padding: 12px 8%;
+  color: #f5f5f5;
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
 }
 
 ul li a {
-    text-decoration: none;
-    color: #575757;
+  text-decoration: none;
+  color: #575757;
 }
 
 .button {
-    display: flex;
-    background-color: #1D4ED8;
-    margin: auto;
-    padding: 12px 25px;
-    color: white;
-    border-radius: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    list-style: none;
-    align-items: flex-start;
+  display: flex;
+  background-color: #1d4ed8;
+  margin: auto;
+  padding: 12px 25px;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  align-items: flex-start;
 }
-.hero{
-    background-image: linear-gradient(
-            rgba(0,0,0,0.4),
-            rgba(0,0,0,0.4)),
-            url('./assets/banner.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./assets/banner.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
-.hero-content{
-    color: white;
+.hero-content {
+  color: white;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+.speakers h1{
     text-align: center;
-    display: grid;
-    gap: 20px;
+}
+.speakers{
+    padding: 0 150px;
+}
+.speakers-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.speakers-card img{
+    width: 100%;
+}
+.speakers-card{
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 20px;
+    text-align: left;
+    align-items: center;
+    transition: 0.3s;
+}
+.speakers-card:hover{
+    transform: translateY(-8px);
+}
+.speakers-card h5{
+    color: #2563EB;
+    padding-left: 10px;
+}
+.speakers-card h3{
+    padding-left: 10px;
+}
+.speakers-card p{
+    padding-left: 10px;
 }
