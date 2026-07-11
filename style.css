@@ -159,6 +159,7 @@
   text-decoration: none;
   list-style: none;
   width: 60%;
+  text-align: center;
   transition: 0.3s;
 }
 .special-card-button:hover{
@@ -175,6 +176,7 @@
   border-radius: 10px;
   font-size: 20px;
   text-decoration: none;
+  text-align: center;
   list-style: none;
   width: 60%;
   transition: 0.3s;
@@ -218,4 +220,81 @@
 .statistics-card:hover{
   transform: translateY(-8px);
   background-color: rgb(226, 222, 222);
+}
+.explore{
+  margin: auto;
+  padding: 30px 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.explore-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  gap: 10px;
+}
+.explore-box{
+  background-color: #0D1B2A;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  transition: 0.3s;
+  color: white;
+}
+.explore-box:hover{
+  background-color: #2b4b6d;
+  transform: translateX(-8px);
+}
+.faq{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+.faq-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  flex-direction: column;
+  gap: 20px;
+}
+.faq-card{
+  background-color: #0D1B2A;
+  border-radius: 20px;
+  color: white;
+  margin: auto;
+  text-align:left;
+  width:320px;
+  height: 100px;
+  padding:25px;
+  transition: 0.3s;
+}
+.faq-card:hover{
+  transform: translateX(-9px);
+}
+.hackathon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hackathon-container{
+  display: flex;
+  gap: 40px;
+}
+.hackathon-card{
+  background-color: #0D1B2A;
+  border-radius: 20px;
+  color: white;
+  margin: auto;
+  text-align:center;
+  justify-content: center;
+  width:150px;
+  height: 80px;
+  padding:15px 10px;
+  transition: 0.3s;
+}
+.hackathon-card:hover{
+  transform: translateX(-5px);
 }
