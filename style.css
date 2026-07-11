@@ -11,14 +11,14 @@
   color: #f5f5f5;
 }
 
-ul {
+.navbar-ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
   gap: 40px;
 }
 
-ul li a {
+.navbar-ul li a {
   text-decoration: none;
   color: #575757;
 }
@@ -34,6 +34,11 @@ ul li a {
   text-decoration: none;
   list-style: none;
   align-items: flex-start;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.button:hover{
+    transform: translateY(-8px);
 }
 .hero {
   background-image:
@@ -66,9 +71,10 @@ ul li a {
 }
 .speakers-card img{
     width: 100%;
+    border-radius: 20px 20px 0 0;
 }
 .speakers-card{
-    border: 1px solid rgb(198, 198, 198);
+    border: 1px solid #E5E7EB;
     border-radius: 20px;
     text-align: left;
     align-items: center;
@@ -86,4 +92,91 @@ ul li a {
 }
 .speakers-card p{
     padding-left: 10px;
+}
+.pricing{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-card{
+  display: flex;
+  gap: 50px;
+  margin: auto;
+}
+.pricing-container-ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333333;
+}
+.special-pricing-container-ul{
+  color: #abaaaa;
+}
+.common-card{
+  background-color: #fafcff;
+  border-radius: 20px;
+  border: 1px solid grey;
+  color: #888888;
+  padding: 20px 20px;
+  transition: 0.3s;
+}
+.common-card:hover{
+    transform: translateY(-8px);
+}
+.special-card{
+  background-color: #0D1B2A;
+  color: #888888;
+  border-radius: 20px;
+  padding: 20px 20px;
+  width: 40vh;
+  transition: 0.3s;
+}
+.special-card:hover{
+    transform: translateY(-8px);
+}
+.card-price{
+  color: #0D1B2A;
+}
+.special-card-price{
+  color: white;
+}
+.special-card-pro{
+  color: #2563EB;
+}
+.special-card-button{
+  display: grid;
+  background-color: #1d4ed8;
+  margin: auto;
+  padding: 12px 50px;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  width: 60%;
+  transition: 0.3s;
+}
+.special-card-button:hover{
+  background-color: #1d23dc;
+  transform: translateY(-8px);
+}
+.common-button{
+  display: grid;
+  background-color: #fafcff;
+  border: 1px solid grey;
+  margin: auto;
+  padding: 12px 25px;
+  color: rgb(28, 28, 28);
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+  width: 60%;
+  transition: 0.3s;
+}
+.common-button:hover{
+  background-color: #1d4ed8;
+  transform: translateY(-8px);
 }
